@@ -1,0 +1,20 @@
+div.ab{
+    background-color: rgb(10, 190, 130);
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: auto;
+}
+div.cd{
+    background-color: rgb(255, 136, 0);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    overflow: auto;
+}
+body{
+    background-color: #343;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

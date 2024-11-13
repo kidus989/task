@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stunning Style</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, p {
+            margin: 10px 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #0a74da;
+        }
+
+        h2 {
+            color: #0d47a1;
+        }
+
+        h3 {
+            color: #01579b;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* Card Styles */
+        .b2 {
+            background: linear-gradient(135deg, #ffffff, #dfe9f3);
+            color: #0d47a1;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            padding: 30px;
+            width: 80%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .b2:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Special Style for #b4 */
+        #b4 {
+            color: white;
+            background-color: #00acc1;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        #b4:hover {
+            background-color: #00838f;
+            transform: scale(1.1);
+        }
+
+        /* Button Styles */
+        button {
+            background-color: #0a74da;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 15px;
+            font-size: 1em;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #006bb3;
+            transform: translateY(-3px);
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #0a74da;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* Animation for Fade-In Effect */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .b2 {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- First Card -->
+    <div class="b2">
+        <h2>New Dreamer</h2>
+        <p>Old Lover</p>
+        <h1>It's Me</h1>
+    </div>
+
+    <!-- Second Card -->
+    <div class="b2">
+        <p id="b4">This is the new book</p>
+        <h2>The 4 Arguments</h2>
+        <h3>The Best</h3>
+    </div>
+
+    <!-- Buttons -->
+    <div style="text-align: center;">
+        <button onclick="hideSections()">Hide Sections</button>
+        <button onclick="updateText()">Update Text</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Author: Hege Refsnes</p>
+        <p>
+            <a href="mailto:hege@example.com">hege@example.com</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to hide all cards
+        function hideSections() {
+            const sections = document.querySelectorAll('.b2');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+        }
+
+        // Function to update the text in #b4
+        function updateText() {
+            const element = document.getElementById('b4');
+            element.innerHTML = "Have a wonderful day!";
+        }
+    </script>
+</body>
+
+</html>

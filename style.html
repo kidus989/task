@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kidus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: static;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color:black;
+        }
+
+        .highlight {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #555;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .animal-list {
+            list-style: square;
+            padding-left: 20px;
+        }
+
+        .feature-box {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            flex: 1;
+            min-width: 200px;
+            padding: 15px;
+            background-color: #ffd54f;
+            color: #333;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 20px 0;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Animal Facts</h1>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p class="highlight">Cats and tigers share fascinating similarities. Learn more below!</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message" style="display: none; color: red;">sikeee</p>
+    </section>
+
+    <section>
+        <h2>Animal Facts</h2>
+        <p>Cats are known for their agility and grace. Tigers, being their larger cousins, are known for their strength and stealth.</p>
+        <p>
+            Explore more about tigers: 
+            <a href="#" target="_blank">Learn about Tigers</a>
+        </p>
+        <img src="https://i.pinimg.com/736x/b1/85/e1/b185e158d58b66518538ea595d2581b9.jpg" alt="image">
+    </section>
+
+    <section>
+        <h2>Animals and Habitats</h2>
+        <ul class="animal-list">
+            <li>Wild Forests</li>
+            <li>National Parks</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Key Values</h2>
+        <div class="feature-box">
+            <div class="feature">
+                <h3>Have Value</h3>
+                <p>Value is important for everything in life.</p>
+            </div>
+            <div class="feature">
+                <h3>Be Respectful</h3>
+                <p>Respect is essential, especially for fostering tolerance.</p>
+            </div>
+            <div class="feature">
+                <h3>Tolerance</h3>
+                <p>Accepting differences is a key to harmony.</p>
+            </div>
+        </div>
+    </section>
+
+    <button onclick="hideFeatures()">Hide Features</button>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+
+        function hideFeatures() {
+            const features = document.querySelectorAll('.feature');
+            features.forEach(feature => {
+                feature.style.display = 'none';
+            });
+        }
+    </script>
+</body>
+
+</html>

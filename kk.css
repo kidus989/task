@@ -1,0 +1,39 @@
+body{
+    background-color: #333;
+}
+
+.aa {
+    background-color: rgb(184, 243, 90);
+}
+
+.ss{
+    background-color: rgba(134, 129, 53, 0.404);
+    padding: 50px;
+}
+
+.box{
+    background-color: rgb(163, 219, 210);
+    padding: 50px;
+}
+
+.box2{
+    padding: 50px;
+    background-color: burlywood;
+}
+
+.box3{
+    height: auto;
+    padding: 10px;
+}
+button{
+    background-color: aquamarine;
+    border: 2px solid aquamarine;
+    border-radius: 4px;
+    padding: 16px;
+    transition: .4s;
+}
+button:hover{
+    background-color: rgb(0, 110, 74);
+    border: 2px solid rgb(0, 110, 74);
+    padding: 17px;
+}

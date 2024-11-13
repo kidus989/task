@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive HTML Task</title>
+    <style>
+        /* Global Styles */
+        body {
+            background: linear-gradient(120deg, #fdfbfb, #ebedee);
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Button Styles */
+        button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        /* Link Styles */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Paragraph Styles */
+        p {
+            margin: 10px 0;
+        }
+
+        .highlight {
+            font-size: 1.5em;
+            color: #8B0000;
+        }
+
+        .info {
+            background-color: #d2691e;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* City Section Styles */
+        .city {
+            background-color: #ff8c00;
+            color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hide Button Section */
+        .hide-btn {
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1 id="main-header">Goodbye</h1>
+        <button onclick="displayMessage()">Click Me</button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <p class="highlight">Cats are special creatures.</p>
+        <p class="info">Tigers are closely related to cats.</p>
+        <a href="https://www.tigersweb.com" target="_blank">Click here to learn more</a>
+        <img src="class.jpg" alt="Class Image" width="144" height="102">
+
+        <!-- List Section -->
+        <ol>
+            <li>Wild Forest</li>
+            <li>National Parks</li>
+        </ol>
+
+        <!-- Section on OTP -->
+        <section>
+            <h1>What is OTP?</h1>
+            <p>OTP stands for One Time Password, a security feature used to authenticate users.</p>
+        </section>
+
+        <!-- City Information -->
+        <div class="city">
+            <h2>Have Value</h2>
+            <p>Value is important for everything in life.</p>
+        </div>
+
+        <div class="city">
+            <h2>Be Respectful</h2>
+            <p>Respect is essential, especially for tolerance.</p>
+        </div>
+
+        <div class="city">
+            <h2>Tolerate Each Other</h2>
+            <p>Tolerance means accepting differences among individuals.</p>
+        </div>
+
+        <!-- Hide Button -->
+        <div class="hide-btn">
+            <button onclick="hideCities()">Hide Cities</button>
+        </div>
+    </main>
+
+    <!-- JavaScript Section -->
+    <script>
+        // Function to display a message
+        function displayMessage() {
+            document.getElementById("main-header").innerText = "Have a great day!";
+            alert("You clicked the button!");
+        }
+
+        // Function to hide city sections
+        function hideCities() {
+            const cities = document.getElementsByClassName("city");
+            for (let i = 0; i < cities.length; i++) {
+                cities[i].style.display = "none";
+            }
+            alert("Cities hidden!");
+        }
+    </script>
+
+</body>
+</html>

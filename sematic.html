@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kidus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(253, 173, 157);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        nav {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+        .all-browsers, section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .all-browsers h1, section h1 {
+            margin-top: 0;
+        }
+
+        article {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgb(245, 245, 245);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        article h2 {
+            color: rgb(66, 133, 244);
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes grow {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .grow:hover {
+            animation: grow 0.5s forwards;
+        }
+        article:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/html/">HTML</a>
+        <a href="/css/">CSS</a>
+        <a href="/js/">JavaScript</a>
+        <a href="/jquery/">jQuery</a>
+    </nav>
+    <section class="all-browsers">
+        <h1>WWF</h1>
+        <header>
+            <h2>What Does WWF Do?</h2>
+            <p>WWF's mission:</p>
+        </header>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the
+            conservation, research, and restoration of the environment. Formerly named the World Wildlife Fund, WWF
+            was founded in 1961.</p>
+    </section>
+    <section>
+        <h1>WWF's Panda Symbol</h1>
+        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi
+            Chi, who was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of
+            WWF.</p>
+    </section>
+    <section>
+        <h2>Popular Web Browsers</h2>
+        <article class="grow">
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular
+                web browser today!</p>
+        </article>
+
+        <article class="grow">
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most
+                popular web browser since January 2018.</p>
+        </article>
+
+        <article class="grow">
+            <h2>Microsoft Edge</h2>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced
+                Internet Explorer.</p>
+        </article>
+    </section>
+
+
+    <footer>
+        <p>developed by: Kidus negatu</p>
+        <p>
+            <a href="mailto:hege@example.com">hege@example.com</a>
+        </p>
+    </footer>
+</body>
+
+</html>
