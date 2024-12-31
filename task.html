@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task HTML</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #001b55, #001b51);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .city {
+            background-color: rgb(0, 102, 255);
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            margin: 10px 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            color: #ffa500;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 144px;
+            height: 102px;
+            border-radius: 8px;
+        }
+
+        ol {
+            margin: 20px;
+            padding-left: 40px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #073ba3;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="text">Hello There</h1>
+    <button onclick="changer()">Change Text</button>
+    
+    <p style="font-size: 1.5rem;">Talent is nothing without hard work.</p>
+    <p style="background-color: #073ba3; padding: 10px; border-radius: 5px;">You can get it done</p>
+
+    <a href="https://www.tigersweb.com" target="_blank">Visit Tigers Web</a>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY4FSk0Kd32gZ9htaL4ZluYifArFuvSKas4A&s" alt="Class Image">
+
+    <ol>
+        <li>Coder</li>
+        <li>Programmer</li>
+    </ol>
+
+    <section>
+        <h1>Programming</h1>
+        <p>As long as you are breathing, you have a chance to chase your dreams...</p>
+    </section>
+
+    <div>
+        <h2 class="city">Have Value</h2>
+        <p>Value is important for everything.</p>
+    </div>
+
+    <div>
+        <h2 class="city">Be Respectful</h2>
+        <p>Respect is important, especially for tolerance.</p>
+    </div>
+
+    <div>
+        <h2 class="city">Tolerate Each Other</h2>
+        <p>Tolerance is about accepting differences.</p>
+    </div>
+
+    <button onclick="myFunction()">Hide Sections</button>
+
+    <script>
+        function myFunction() {
+            const elements = document.getElementsByClassName("city");
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.display = "none";
+            }
+        }
+
+        function changer() {
+            document.getElementById("text").innerHTML = "Goodbye...";
+        }
+    </script>
+</body>
+</html>
